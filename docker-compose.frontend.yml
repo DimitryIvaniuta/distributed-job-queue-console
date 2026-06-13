@@ -1,0 +1,9 @@
+services:
+  distributed-job-queue-console:
+    build: .
+    image: distributed-job-queue-console:local
+    environment:
+      APP_API_BASE_URL: http://localhost:8080
+      APP_VERSION: local-container
+    ports:
+      - "3000:8080"

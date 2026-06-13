@@ -1,0 +1,47 @@
+{
+  "name": "distributed-job-queue-console",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Banking-style React 19.2 TypeScript console for the Distributed Priority Job Queue backend.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc -b",
+    "test": "vitest run --coverage",
+    "e2e": "playwright test",
+    "audit": "npm audit --audit-level=high"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.101.0",
+    "lucide-react": "1.17.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-router": "7.17.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.60.0",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
+    "@types/node": "25.0.0",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitest/coverage-v8": "4.1.8",
+    "eslint": "10.4.1",
+    "jsdom": "29.1.1",
+    "msw": "2.14.6",
+    "prettier": "3.7.4",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.60.1",
+    "vite": "8.0.16",
+    "vitest": "4.1.8"
+  }
+}
